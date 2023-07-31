@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYBA - Desinfección</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
+   
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <div class="menu-boton">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><span class="material-symbols-outlined">menu</span></label>
+
+            <nav class="menu">
+                <div class="botones-centrales">    
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#quienes-somos">Quienes Somos</a></li>
+                        <li><a href="#cotizar">Cotizar</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-user">
+                    <ul>
+                        <li><a href="">Iniciar Sesion</a></li>
+                        <li><a href="">Requistarme</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+    </header>
+
+
+    <div id="inicio" class="slider-container">
+        <div class="slider">
+            <img src="./style/multimedia/IMAGEN.png" alt="Slider Image 1">
+            <img src="./style/multimedia/IMAGEN.png" alt="Slider Image 2">
+            <img src="./style/multimedia/IMAGEN.png" alt="Slider Image 3">
+            <img src="./style/multimedia/IMAGEN.png" alt="Slider Image 4">
+            <img src="./style/multimedia/IMAGEN.png" alt="Slider Image 5">
+        </div>
+    </div>
+
+    <section id="quienes-somos">
+        <h2>Quienes Somos</h2>
+        <p>Texto de descripción sobre nosotros...</p>
+    </section>
+
+    <section id="cotizar">
+        <h2>Cotizar</h2>
+        <label for="metros-cuadrados">Metros cuadrados de la propiedad:</label>
+        <input type="number" id="metros-cuadrados" placeholder="Ingresa los metros cuadrados">
+
+        <label for="plantas">Plantas de la propiedad:</label>
+        <input type="number" id="plantas" placeholder="Ingresa la cantidad de plantas">
+
+        <button onclick="calcularCotizacion()">Calcular</button>
+
+        <div id="resultado-cotizacion"></div>
+    </section>
+    
+    <div class="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur felis vel justo commodo, a fermentum nunc malesuada.</p>
+    </div>
+    <div class="form-container">
+        <form action="mailto:correo@mayba.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="tel" name="phone" placeholder="Teléfono" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit">Agendar visita</button>
+        </form>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
